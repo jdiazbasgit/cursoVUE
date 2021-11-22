@@ -1,13 +1,13 @@
 /* eslint-disable vue/require-v-for-key */
 <template>
 
-    <h1>{{ msg }}</h1>
+    <h1>texto:{{ msg }}</h1>
     <h1 >{{texto}}</h1>
     <h1>{{5*6}}</h1>
     <button v-on:click="cambiarTexto('texto cambiado desde el evento')">pulsa para cambiar</button>
-    <input type="text"  v-model="texto" >
+    <input type="text" v-on:keyPress="agregarPersona" v-model="texto" >
 
-    <button v-on:click="agregarPersona()">agregar persona</button>
+    <button v-on:click="agregarPersona">agregar persona</button>
 
     
     <ul v-for="(persona,index) in personas" :key="index" >
