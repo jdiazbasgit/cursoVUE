@@ -77,7 +77,7 @@ export default {
     },
     agregarPersona() {
       console.log(this.msg);
-      this.msg("datos cambiados");
+      this.msg("datos cambiados del padre");
       let campo1 = document.querySelector("#campo1");
       this.campo1 = campo1.value;
       let persona = new Persona("federico", "garcia", "9393939");
